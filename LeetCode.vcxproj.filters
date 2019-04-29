@@ -21,5 +21,29 @@
     <ClCompile Include="0002.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0003.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0054.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0066.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0067.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0118.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0498.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0724.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0747.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
