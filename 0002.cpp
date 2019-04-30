@@ -17,7 +17,7 @@ struct ListNode {
 	explicit ListNode(const int x) : val(x), next(nullptr) {}
 };
  
-class Solution {
+class Solution0002 {
 public:
 	static ListNode* add_two_numbers(ListNode* l1, ListNode* l2) {
 		const auto len1 = get_len(l1), len2 = get_len(l2);

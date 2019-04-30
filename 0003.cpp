@@ -22,7 +22,7 @@
 #include <string>
 #include <algorithm>
 
-class Solution {
+class Solution0003 {
 public:
 	int length_of_longest_substring(std::string s) const
 	{

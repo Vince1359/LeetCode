@@ -14,7 +14,7 @@
 #include <unordered_map>
 #include <stdexcept>
 
-class Solution {
+class Solution0001 {
 public:
 	static std::vector<int> two_sum(std::vector<int>& nums, const int target) {
 		std::unordered_map<int, int> record;

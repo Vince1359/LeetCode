@@ -18,7 +18,7 @@
 
 #include <vector>
 
-class Solution {
+class Solution0066 {
 public:
 	static std::vector<int> plus_one(std::vector<int>& digits) {
 		digits[digits.size() - 1] ++;

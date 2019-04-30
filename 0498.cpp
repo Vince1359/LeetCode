@@ -1,53 +1,68 @@
+/*
+ * 498. Diagonal Traverse
+ * Given a matrix of M x N elements (M rows, N columns), 
+ * return all elements of the matrix in diagonal order as shown in the below image.
+ * 
+ * Example:
+ * Input:
+ * [
+ *  [ 1, 2, 3 ],
+ *  [ 4, 5, 6 ],
+ *  [ 7, 8, 9 ]
+ * ]
+ */
+
 #include <vector>
 
-class Solution {
+class Solution0498 {
 public:
-	std::vector<int> findDiagonalOrder(std::vector<std::vector<int>>& matrix) {
+	static std::vector<int> find_diagonal_order(std::vector<std::vector<int>>& matrix) {
 		std::vector<int> res;
 
-		n = matrix.size();
-		if (n == 0)
+		n_ = matrix.size();
+		if (n_ == 0)
 			return res;
-		m = matrix[0].size();
+		m_ = matrix[0].size();
 
-		int x = 0, y = 0;
-		int nextX, nextY;
-		bool up = true;
+		auto x = 0, y = 0;
+		int next_x, next_y;
+		auto up = true;
 		while (true) {
 			res.push_back(matrix[x][y]);
 
 			if (up)
-				nextX = x - 1, nextY = y + 1;
+				next_x = x - 1, next_y = y + 1;
 			else
-				nextX = x + 1, nextY = y - 1;
+				next_x = x + 1, next_y = y - 1;
 
-			if (inArea(nextX, nextY))
-				x = nextX, y = nextY;
+			if (in_area(next_x, next_y))
+				x = next_x, y = next_y;
 			else if (up) {
-				if (inArea(x, y + 1))
+				if (in_area(x, y + 1))
 					y++;
 				else
 					x++;
 				up = false;
 			}
 			else {
-				if (inArea(x + 1, y))
+				if (in_area(x + 1, y))
 					x++;
 				else
 					y++;
 				up = true;
 			}
 
-			if (!inArea(x, y))
+			if (!in_area(x, y))
 				break;
 		}
 
 		return res;
 	}
 private:
-	int n, m;
+	static int n_, m_;
 
-	bool inArea(int x, int y) {
-		return x >= 0 && x < n && y >= 0 && y < m;
+	static bool in_area(const int x, const int y)
+	{
+		return x >= 0 && x < n_ && y >= 0 && y < m_;
 	}
 };

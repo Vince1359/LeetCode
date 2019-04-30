@@ -24,7 +24,7 @@
 
 #include <vector>
 
-class Solution {
+class Solution0054 {
 public:
 	std::vector<int> spiral_order(std::vector<std::vector<int>>& matrix) {
 		n_ = matrix.size();

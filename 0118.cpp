@@ -16,7 +16,7 @@
 
 #include <vector>
 
-class Solution {
+class Solution0118 {
 public:
 	static std::vector<std::vector<int>> generate(const int num_rows) {
 		std::vector<std::vector<int>> res;

@@ -14,7 +14,7 @@
 
 #include <string>
 
-class Solution {
+class Solution0067 {
 public:
 	static std::string add_binary(std::string a, std::string b) {
 		auto res = a.size() > b.size() ? a : b;
