@@ -21,7 +21,7 @@
 
 #include <string>
 
-class Solution {
+class Solution0028 {
 public:
 	static int str_str(std::string haystack, std::string needle) {
 		if (needle.size() > haystack.size())
